@@ -1,74 +1,75 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>基礎網站架構 - 首頁</title>
-    <!-- 連結共用的 CSS 文件 -->
-    <link rel="stylesheet" href="style.css">
+    <title>關於我 - 何凡的血糖專案紀錄</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-
-    <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="about.html">關於我們</a></li>
-                    <li><a href="service.html">服務項目</a></li>
-                </ul>
-            </nav>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-bold text-xl text-emerald-600">血糖實驗室</a>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="results.html" class="hover:text-emerald-600 transition">專案結果</a>
+                <a href="science.html" class="hover:text-emerald-600 transition">科普內容</a>
+                <a href="about.html" class="text-emerald-600 border-b-2 border-emerald-600 pb-1">關於我</a>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
-        <!-- 核心要求：H1 大標題（粗體、大） -->
-        <h1>歡迎來到我們的網站</h1>
-        <p style="text-align: center;">這是一個符合你所有要求的基礎 HTML 架構。它是白底黑字，並完全依靠粗體和字體大小來區分內容層級。</p>
-
-        <!-- 核心要求：H2 次標題（粗體、中大） -->
-        <h2>精選內容</h2>
-
-        <!-- 核心要求：四個圖片解說空位 (網格佈局) -->
-        <div class="explain-grid">
-            
-            <!-- 空位 1 -->
-            <div class="explain-item">
-                <div class="image-placeholder"></div>
-                <h3>解目標標題 1</h3>
-                <p>這是第一個圖片的解說文字。這裡是正常的內文字體大小，沒有加粗。</p>
+    <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
+        <!-- 個人簡介區 -->
+        <section class="grid md:grid-cols-3 gap-8 items-center bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
+            <div class="bg-slate-200 aspect-square rounded-full overflow-hidden flex items-center justify-center text-slate-500">
+                <!-- 請將 src 替換為你的照片，例如：images/author-photo.jpg -->
+                <img src="images/author-photo.jpg" alt="何凡 個人照" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
+                <span class="text-xs text-center px-2">【圖片位置：個人照片 / 博覽會發表照】</span>
             </div>
-
-            <!-- 空位 2 -->
-            <div class="explain-item">
-                <div class="image-placeholder"></div>
-                <h3>解目標標題 2</h3>
-                <p>這是第二個圖片的解說文字。這裡是正常的內文字體大小，沒有加粗。</p>
+            <div class="md:col-span-2 space-y-3">
+                <h1 class="text-2xl font-extrabold text-slate-900">大家好，我是何凡！ 👋</h1>
+                <p class="text-slate-600 text-sm">來自無界塾的研究者。這項專案源於我對未來職涯「體能教練」的探索。在運動科學與健康管理中，我相信一名優秀的教練除了關注運動訓練外，更需要理解飲食與睡眠對人體生理的深刻影響。</p>
             </div>
+        </section>
 
-            <!-- 空位 3 -->
-            <div class="explain-item">
-                <div class="image-placeholder"></div>
-                <h3>解目標標題 3</h3>
-                <p>這是第三個圖片的解說文字。這裡是正常的內文字體大小，沒有加粗。</p>
+        <!-- 個人反思 -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-900 border-l-4 border-emerald-500 pl-3">專案反思：一把「科學的手術刀」</h2>
+            <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3 text-sm text-slate-600">
+                <p>這 42 天與自身血糖數據的對話，對我來說不只是學術探索，更像是一把精準的手術刀，剖開過往被忽視的日常飲食習慣。</p>
+                <p>在執行過程中，雖然歷經運動變因過於複雜、缺乏專業身體組成分析儀等困難，但我學會了收縮變因、靈活調整策略，並透過透氣膠帶補強探頭，順利完成了完整的真實數據收集。</p>
             </div>
+        </section>
 
-            <!-- 空位 4 -->
-            <div class="explain-item">
-                <div class="image-placeholder"></div>
-                <h3>解目標標題 4</h3>
-                <p>這是第四個圖片的解說文字。這裡是正常的內文字體大小，沒有加粗。</p>
+        <!-- 博覽會分享與受眾回饋 -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-900 border-l-4 border-emerald-500 pl-3">實驗教育博覽會發表與成效</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3">
+                    <h3 class="font-bold text-slate-900">問卷量化反饋 (共 31 份)</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex justify-between border-b pb-1">
+                            <span>成果清晰易懂認可度：</span>
+                            <span class="font-bold text-emerald-600">93.5%</span>
+                        </li>
+                        <li class="flex justify-between border-b pb-1">
+                            <span>文獻探討完整性正面評價：</span>
+                            <span class="font-bold text-emerald-600">90.0%</span>
+                        </li>
+                        <li class="flex justify-between border-b pb-1">
+                            <span>未來活動持續參與意願：</span>
+                            <span class="font-bold text-emerald-600">100.0%</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-200 rounded-xl h-48 flex items-center justify-center text-slate-500">
+                    <!-- 請將 src 替換為你的圖片路徑，例如：images/expo-group.jpg -->
+                    <img src="images/expo-group.jpg" alt="博覽會現場互動照片" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
+                    <span class="text-sm">【圖片位置：博覽會現場分享與團體合照】</span>
+                </div>
             </div>
-
-        </div> <!-- end .explain-grid -->
-
+        </section>
     </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 基礎網站架構簡約版. 保留所有權利。</p>
-        </div>
-    </footer>
-
 </body>
 </html>
