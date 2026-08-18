@@ -1,63 +1,66 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>服務項目</title>
-    <link rel="stylesheet" href="style.css">
+    <title>科普內容 - 血糖管理日常指南</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-
-    <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="about.html">關於我們</a></li>
-                    <li><a href="service.html">服務項目</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="container">
-        <h1>服務項目</h1>
-        <p style="text-align: center;">這裡是我們提供的服務說明，您可以自由修改這個區塊。</p>
-
-        <h2>核心服務列表</h2>
-
-        <div class="explain-grid">
-            <div class="explain-item">
-                <div class="image-placeholder"></div>
-                <h3>服務項目 1</h3>
-                <p>這裡是第一個服務項目的詳細說明。</p>
-            </div>
-
-            <div class="explain-item">
-                <div class="image-placeholder"></div>
-                <h3>服務項目 2</h3>
-                <p>這裡是第二個服務項目的詳細說明。</p>
-            </div>
-
-            <div class="explain-item">
-                <div class="image-placeholder"></div>
-                <h3>服務項目 3</h3>
-                <p>這裡是第三個服務項目的詳細說明。</p>
-            </div>
-
-            <div class="explain-item">
-                <div class="image-placeholder"></div>
-                <h3>服務項目 4</h3>
-                <p>這裡是第四個服務項目的詳細說明。</p>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-bold text-xl text-emerald-600">血糖實驗室</a>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="results.html" class="hover:text-emerald-600 transition">專案結果</a>
+                <a href="science.html" class="text-emerald-600 border-b-2 border-emerald-600 pb-1">科普內容</a>
+                <a href="about.html" class="hover:text-emerald-600 transition">關於我</a>
             </div>
         </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
+        <section class="text-center space-y-3">
+            <h1 class="text-3xl font-extrabold text-slate-900">人人能懂的健康指南</h1>
+            <p class="text-slate-600">將生硬的 42 天生理數據白話轉化，告別盲目飲食跟風，打造屬於你的個人化健康策略。</p>
+        </section>
+
+        <!-- 三大核心叮嚀 -->
+        <section class="space-y-6">
+            <h2 class="text-xl font-bold text-slate-900 border-l-4 border-emerald-500 pl-3">現場分享的三大核心叮嚀</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-2">
+                    <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center font-bold text-lg">1</div>
+                    <h3 class="font-bold text-slate-900">論文數據不可盲從</h3>
+                    <p class="text-xs text-slate-600">他人研究或低 GI 菜單僅供參考，個體生理反應差異巨大，長期執行某種飲食前務必親自實際測試與觀察。</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-2">
+                    <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center font-bold text-lg">2</div>
+                    <h3 class="font-bold text-slate-900">規律睡眠是調控關鍵</h3>
+                    <p class="text-xs text-slate-600">血糖管理不只有飲食！睡眠品質與作息規律會直接影響胰島素敏感度，是維持穩定血糖不可或缺的因子。</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-2">
+                    <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center font-bold text-lg">3</div>
+                    <h3 class="font-bold text-slate-900">建立個人化數據紀錄</h3>
+                    <p class="text-xs text-slate-600">避免採用短時間極端降體重的手段。應以個人的日常飲食紀錄與血糖反應為基準，科學化打造健康模式。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 科普圖文剖析區塊 -->
+        <section class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm space-y-6">
+            <h2 class="text-xl font-bold text-slate-900">重點專題：喝蘋果醋真的能控制血糖嗎？</h2>
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+                <div class="space-y-3 text-sm text-slate-600">
+                    <p>在許多健康文獻中，醋酸被認為能延緩胃排空並提高胰島素敏感度。本次實驗中，第 3 週飲食確實讓週平均血糖下降至 104 mg/dL。</p>
+                    <p class="bg-amber-50 text-amber-800 p-3 rounded-lg border-l-2 border-amber-400"><strong>警惕警訊：</strong>實驗同時記錄到 2 次夜間低血糖事件（血糖低於 70 mg/dL）。這代表任何熱門飲食法都可能隱藏個體風險，建議飲用時調整醋與水的比例，並避免空腹或過量食用。</p>
+                </div>
+                <div class="bg-slate-200 rounded-xl h-48 flex items-center justify-center text-slate-500">
+                    <!-- 請將 src 替換為你的圖片路徑，例如：images/apple-cider-chart.jpg -->
+                    <img src="images/apple-cider-chart.jpg" alt="蘋果醋對血糖影響分析圖" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
+                    <span class="text-sm">【圖片位置：蘋果醋數據波動曲線圖】</span>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 我的網站名稱. 保留所有權利。</p>
-        </div>
-    </footer>
-
 </body>
 </html>
