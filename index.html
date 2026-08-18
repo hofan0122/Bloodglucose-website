@@ -40,35 +40,36 @@
             </div>
         </section>
 
-        <!-- 博覽會分享與受眾回饋 -->
-        <section class="space-y-4">
-            <h2 class="text-xl font-bold text-slate-900 border-l-4 border-emerald-500 pl-3">實驗教育博覽會發表與成效</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3">
-                    <h3 class="font-bold text-slate-900">問卷量化反饋 (共 31 份)</h3>
-                    <ul class="space-y-2 text-sm text-slate-600">
-                        <li class="flex justify-between border-b pb-1">
-                            <span>成果清晰易懂認可度：</span>
-                            <span class="font-bold text-emerald-600">93.5%</span>
-                        </li>
-                        <li class="flex justify-between border-b pb-1">
-                            <span>文獻探討完整性正面評價：</span>
-                            <span class="font-bold text-emerald-600">90.0%</span>
-                        </li>
-                        <li class="flex justify-between border-b pb-1">
-                            <span>未來活動持續參與意願：</span>
-                            <span class="font-bold text-emerald-600">100.0%</span>
-                        </li>
-                    </ul>
+     <section class="space-y-4">
+    <h2 class="text-xl font-bold text-slate-900 border-l-4 border-emerald-500 pl-3">實驗教育博覽會發表與成效</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+        <!-- 左側：瀏覽次數計數器 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-4 flex flex-col justify-center">
+            <h3 class="font-bold text-slate-900 text-lg">網站造訪數據紀錄</h3>
+            <div class="space-y-3 text-sm text-slate-600">
+                <div class="flex justify-between border-b border-slate-100 pb-2 items-center">
+                    <span>累積總瀏覽次數 (PV)</span>
+                    <span class="font-bold text-emerald-600 text-lg">
+                        <span id="busuanzi_value_site_pv">--</span> <span class="text-xs font-normal text-slate-500">次</span>
+                    </span>
                 </div>
-
-                <div class="bg-slate-200 rounded-xl h-48 flex items-center justify-center text-slate-500">
-                    <!-- 請將 src 替換為你的圖片路徑，例如：images/expo-group.jpg -->
-                    <img src="images/expo-group.jpg" alt="博覽會現場互動照片" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-                    <span class="text-sm">【圖片位置：博覽會現場分享與團體合照】</span>
+                <div class="flex justify-between border-b border-slate-100 pb-2 items-center">
+                    <span>累積獨立訪客數 (UV)</span>
+                    <span class="font-bold text-emerald-600 text-lg">
+                        <span id="busuanzi_value_site_uv">--</span> <span class="text-xs font-normal text-slate-500">人</span>
+                    </span>
                 </div>
             </div>
-        </section>
-    </main>
-</body>
-</html>
+            <p class="text-xs text-slate-400">※ 數據由第三方系統自動即時更新</p>
+        </div>
+
+        <!-- 右側：照片展示 -->
+        <div class="bg-slate-200 rounded-xl h-48 flex items-center justify-center text-slate-500">
+            <img src="images/expo-group.jpg" alt="博覽會現場互動照片" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
+            <span class="text-sm">【圖片位置：博覽會現場分享與團體合照】</span>
+        </div>
+    </div>
+</section>
+
+<!-- 腳本引入 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
