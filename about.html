@@ -1,66 +1,103 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>基礎網站架構 - 關於我們</title>
-    <link rel="stylesheet" href="style.css">
+    <title>專案結果 - 四週飲食與血糖起伏研究</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+    <!-- 導覽列 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-bold text-xl text-emerald-600">血糖實驗室</a>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="results.html" class="text-emerald-600 border-b-2 border-emerald-600 pb-1">專案結果</a>
+                <a href="science.html" class="hover:text-emerald-600 transition">科普內容</a>
+                <a href="about.html" class="hover:text-emerald-600 transition">關於我</a>
+            </div>
+        </div>
+    </nav>
 
-    <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="about.html">關於我們</a></li>
-                    <li><a href="service.html">服務項目</a></li>
+    <!-- 主要內容 -->
+    <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
+        <section class="text-center space-y-3">
+            <h1 class="text-3xl font-extrabold text-slate-900">四週飲食控制對血糖波動之影響</h1>
+            <p class="text-slate-600">透過 42 天連續型血糖監測儀（CGM）客觀數據，探索飲食策略對生理血糖反應的真實趨勢。</p>
+        </section>
+
+        <!-- 主視覺圖片位置 -->
+        <div class="bg-slate-200 rounded-xl overflow-hidden shadow-inner aspect-video flex items-center justify-center text-slate-500">
+            <!-- 請將 src 替換為你的圖片路徑，例如：images/cgm-device.jpg -->
+            <img src="images/cgm-device.jpg" alt="CGM 配戴與數據監測示意圖" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
+            <span class="text-sm">【圖片位置：CGM 儀器配戴與手機監測畫面】</span>
+        </div>
+
+        <!-- 數據比較表格 -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-slate-900 border-l-4 border-emerald-500 pl-3">四週實驗數據對比</h2>
+            <div class="overflow-x-auto bg-white rounded-xl shadow-sm border border-slate-100">
+                <table class="w-full text-left text-sm border-collapse">
+                    <thead class="bg-slate-100 text-slate-700">
+                        <tr>
+                            <th class="p-3 border-b">實驗階段</th>
+                            <th class="p-3 border-b">飲食策略介入</th>
+                            <th class="p-3 border-b">平均血糖 (mg/dL)</th>
+                            <th class="p-3 border-b">特殊事件記錄</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr>
+                            <td class="p-3 font-semibold">W1 對照組</td>
+                            <td class="p-3">維持正常飲食與日常作息</td>
+                            <td class="p-3 font-medium">112</td>
+                            <td class="p-3 text-slate-500">無低血糖事件</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold">W2 高蛋白低熱量</td>
+                            <td class="p-3">提高蛋白質攝取、降低熱量吸收</td>
+                            <td class="p-3 font-medium">114</td>
+                            <td class="p-3 text-slate-500">缺漏一天數據 (數據共6天)</td>
+                        </tr>
+                        <tr class="bg-amber-50/50">
+                            <td class="p-3 font-semibold text-amber-900">W3 蘋果醋介入</td>
+                            <td class="p-3 text-amber-900">維持正常飲食，餐後飲用蘋果醋</td>
+                            <td class="p-3 font-medium text-amber-900">104</td>
+                            <td class="p-3 text-amber-700 font-medium">發生 2 次夜間低血糖 (&lt;70 mg/dL)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold">W4 複合介入</td>
+                            <td class="p-3">同時實施高蛋白低熱量與餐後蘋果醋</td>
+                            <td class="p-3 font-medium">111</td>
+                            <td class="p-3 text-slate-500">數據與對照組相差無異</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 關鍵發現與困難突破 -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <section class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3">
+                <h3 class="font-bold text-slate-900 text-lg flex items-center gap-2">
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full"></span> 核心實驗發現
+                </h3>
+                <ul class="space-y-2 text-sm text-slate-600 list-disc list-inside">
+                    <li><strong>個體反應差異顯著：</strong>文獻中歸類為低 GI 的燕麥，在作者個體上產生最高峰值（216 mg/dL）。</li>
+                    <li><strong>蘋果醋雙刃劍：</strong>餐後飲用蘋果醋確實能抑制平均血糖上升，但引發了 2 次夜間低血糖（53 mg/dL / 57 mg/dL），證實該方法具備個體風險。</li>
                 </ul>
-            </nav>
+            </section>
+
+            <section class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3">
+                <h3 class="font-bold text-slate-900 text-lg flex items-center gap-2">
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full"></span> 實驗困難與因應
+                </h3>
+                <ul class="space-y-2 text-sm text-slate-600 list-disc list-inside">
+                    <li><strong>變因干擾與收束：</strong>初期嘗試運動與飲食雙變因，後果斷移除運動課表，專注於「單純飲食策略」。</li>
+                    <li><strong>設備固定補強：</strong>面對洗澡與汗水導致探頭鬆脫發癢，採取透氣膠帶交叉固定順利撐過 14 天監測期。</li>
+                </ul>
+            </section>
         </div>
-    </header>
-
-    <main class="container">
-        <h1>關於我們的故事</h1>
-        <p>我們致力於提供最簡約、最清晰的網頁設計解決方案。我們相信，透過粗體和字體大小的靈活運用，純粹的黑白也能創造出極具層紀感的視覺體驗。</p>
-
-        <h2>我們的核心團隊</h2>
-
-        <div class="explain-grid">
-            
-            <div class="explain-item">
-                <div class="image-placeholder"></div>
-                <h3>創辦人</h3>
-                <p>創辦人的簡介文字，描述其願景和背景。</p>
-            </div>
-
-            <div class="explain-item">
-                <div class="image-placeholder"></div>
-                <h3>設計總監</h3>
-                <p>設計總監的簡介文字，專注於極簡主義設計。</p>
-            </div>
-
-            <div class="explain-item">
-                <div class="image-placeholder"></div>
-                <h3>技術負責人</h3>
-                <p>技術負責人的簡介文字，確保網頁結構穩健。</p>
-            </div>
-
-            <div class="explain-item">
-                <div class="image-placeholder"></div>
-                <h3>市場推廣</h3>
-                <p>市場推廣的簡介文字，將簡約理念傳達給大眾。</p>
-            </div>
-
-        </div>
-
     </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 基礎網站架構簡約版. 保留所有權利。</p>
-        </div>
-    </footer>
-
 </body>
 </html>
