@@ -7,21 +7,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
-   <nav class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="index.html" class="font-bold text-xl text-emerald-600">血糖實驗科普</a>
-        <div class="space-x-6 text-sm font-medium">
-            <a href="results.html" class="hover:text-emerald-600 transition">專案結果</a>
-            <a href="science.html" class="hover:text-emerald-600 transition">科普</a>
-            <a href="index.html" class="hover:text-emerald-600 transition">首頁</a>
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-bold text-xl text-emerald-600">血糖實驗科普</a>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="results.html" class="hover:text-emerald-600 transition">專案結果</a>
+                <a href="science.html" class="hover:text-emerald-600 transition">科普</a>
+                <a href="index.html" class="hover:text-emerald-600 transition">首頁</a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
+        <!-- 標題區塊 -->
         <section class="text-center space-y-3">
             <h1 class="text-3xl font-extrabold text-slate-900">人人能懂的健康指南</h1>
-            <p class="text-slate-600">將生硬的 42 天生理數據白話轉化，告別盲目飲食跟風，打造屬於你的個人化健康策略。</p>
+            <p class="text-slate-600">將生硬的 42 天生理數據白話轉化，告別盲目飲食跟風，打造屬於你的個人化健康策略[cite: 1]。</p>
         </section>
 
         <!-- 三大核心叮嚀 -->
@@ -46,13 +47,142 @@
             </div>
         </section>
 
+        <!-- 何凡 42 天實測圖卡區塊 -->
+        <section class="space-y-6">
+            <h2 class="text-xl font-bold text-slate-900 border-l-4 border-emerald-500 pl-3">42 天 N=1 自體實測圖卡（何凡專案）</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- 圖卡 1 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="bg-emerald-100 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full">個人 N=1 實驗</span>
+                        <span class="text-xs text-slate-400">42 天連續監測[cite: 1]</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base">專案背景與總覽</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">為了探索體能教練與健康管理的關鍵，配戴連續血糖監測儀（CGM）進行長達四週的自體對照實驗，驗證高蛋白低熱量餐與餐後喝醋對血糖的實測影響[cite: 1]。</p>
+                    <div class="bg-emerald-50 text-emerald-800 p-3 rounded-lg border-l-2 border-emerald-400 text-xs">
+                        <strong>核心啟示：</strong>血糖管理不是憑空想像，用客觀數據為身體找到最適合的飲食節奏[cite: 1]。
+                    </div>
+                </div>
+
+                <!-- 圖卡 2 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-2.5 py-1 rounded-full">W1 基線測試</span>
+                        <span class="text-xs text-slate-400">無介入[cite: 1]</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base">【基準線對照】正常飲食下的身體血糖表現</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">第一週不施加任何飲食控制作為比較基線[cite: 1]。數據顯示基礎葡萄糖調控能力良好，週平均血糖 102 mg/dL，且無任何高低血糖事件發生[cite: 1]。</p>
+                    <div class="bg-emerald-50 text-emerald-800 p-3 rounded-lg border-l-2 border-emerald-400 text-xs">
+                        <strong>核心啟示：</strong>進行任何飲食調整前，先建立個人健康的「基礎數據對照線」至關重要[cite: 1]。
+                    </div>
+                </div>
+
+                <!-- 圖卡 3 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="bg-amber-100 text-amber-700 text-xs font-semibold px-2.5 py-1 rounded-full">W2 減脂飲食</span>
+                        <span class="text-xs text-slate-400">迷思顛覆[cite: 1]</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base">【打破迷思】吃高蛋白低熱量，血糖反而變高了？</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">提高蛋白質攝取（1.2倍體重）並降低熱量，週平均血糖卻上升至 114 mg/dL（全期最高）[cite: 1]。這與蛋白質經糖質新生作用轉化為葡萄糖有關[cite: 1]。</p>
+                    <div class="bg-emerald-50 text-emerald-800 p-3 rounded-lg border-l-2 border-emerald-400 text-xs">
+                        <strong>核心啟示：</strong>低熱量餐不等於極低血糖，蛋白質代謝對血糖的影響比想像中更持久[cite: 1]。
+                    </div>
+                </div>
+
+                <!-- 圖卡 4 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-2.5 py-1 rounded-full">W3 蘋果醋介入</span>
+                        <span class="text-xs text-slate-400">波動觀察[cite: 1]</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base">【醋酸實測】飯後喝蘋果醋能全面平抑血糖嗎？</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">餐後飲用稀釋蘋果醋後，平均血糖降至 104 mg/dL[cite: 1]。但初期曾出現 2 次夜間低血糖（最低 53 mg/dL），且週末仍有 186 mg/dL 的高峰[cite: 1]。</p>
+                    <div class="bg-emerald-50 text-emerald-800 p-3 rounded-lg border-l-2 border-emerald-400 text-xs">
+                        <strong>核心啟示：</strong>醋酸雖有輔助潛力，但單靠「飯後喝醋」無法完全杜絕高碳水帶來的血糖高峰[cite: 1]。
+                    </div>
+                </div>
+
+                <!-- 圖卡 5 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="bg-purple-100 text-purple-700 text-xs font-semibold px-2.5 py-1 rounded-full">W4 雙重介入</span>
+                        <span class="text-xs text-slate-400">綜合驗證[cite: 1]</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base">【雙管齊下】高蛋白 ＋ 蘋果醋＝控糖效果加倍？</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">同時實施高蛋白與飯後喝醋，平均血糖為 111 mg/dL[cite: 1]。數據並未展現「效果加倍降低」，且記錄到全期最高單點值 195 mg/dL[cite: 1]。</p>
+                    <div class="bg-emerald-50 text-emerald-800 p-3 rounded-lg border-l-2 border-emerald-400 text-xs">
+                        <strong>核心啟示：</strong>複合式飲食控制的效果並非簡單的算術相加，仍需視特定餐食組合而定[cite: 1]。
+                    </div>
+                </div>
+
+                <!-- 圖卡 6 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="bg-rose-100 text-rose-700 text-xs font-semibold px-2.5 py-1 rounded-full">科學素養</span>
+                        <span class="text-xs text-slate-400">研究避坑[cite: 1]</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base">從混亂到嚴謹：變因收斂與設備危機處置</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">初期發現運動會造成劇烈血糖波動，果斷剔除運動變因以確保科學嚴謹[cite: 1]；面對 CGM 貼布發癢脫落危機，則以透氣膠帶交叉固定順利完賽。</p>
+                    <div class="bg-emerald-50 text-emerald-800 p-3 rounded-lg border-l-2 border-emerald-400 text-xs">
+                        <strong>核心啟示：</strong>做科學實驗要懂得「取捨變因」，靈活解決實務問題才能獲得乾淨數據[cite: 1]。
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 國際文獻對照圖卡區塊 -->
+        <section class="space-y-6">
+            <h2 class="text-xl font-bold text-slate-900 border-l-4 border-emerald-500 pl-3">國際文獻對照研究</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- 研究者 A -->
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded-full">國際文獻</span>
+                        <span class="text-xs text-slate-400">進食順序</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm">【研究者 A】不改餐點，改「進食順序」就能抑糖？</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">先吃蛋白質與蔬菜，10分鐘後再吃碳水，能讓餐後血糖峰值降低 <strong>&gt;40%</strong>，整體波動大幅平緩。</p>
+                    <div class="bg-slate-50 p-3 rounded-lg border-l-2 border-slate-300 text-xs text-slate-600">
+                        <strong>與專案對照：</strong>本專案 W2 聚焦於蛋白質「攝取量」[cite: 1]，研究者 A 則補充了「進食順序」的威力。
+                    </div>
+                </div>
+
+                <!-- 研究者 B -->
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded-full">國際文獻</span>
+                        <span class="text-xs text-slate-400">醋酸時機</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm">【研究者 B】蘋果醋最佳時機：「餐前」喝！</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">高碳水餐前喝 20g 稀釋醋，可延緩胃排空並抑制澱粉酶，降低餐後血糖上升幅度達 <strong>19% ~ 34%</strong>。</p>
+                    <div class="bg-slate-50 p-3 rounded-lg border-l-2 border-slate-300 text-xs text-slate-600">
+                        <strong>與專案對照：</strong>本專案採「餐後喝醋」[cite: 1]，研究者 B 證實「餐前喝醋」防禦效果更佳。
+                    </div>
+                </div>
+
+                <!-- 研究者 C -->
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded-full">國際文獻</span>
+                        <span class="text-xs text-slate-400">微運動</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm">【研究者 C】飯後散步 2 分鐘就有效</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">飯後進行 <strong>2–5 分鐘輕度步行</strong>，骨骼肌能主動吸收葡萄糖，平抑血糖與胰島素峰值效果顯著。</p>
+                    <div class="bg-slate-50 p-3 rounded-lg border-l-2 border-slate-300 text-xs text-slate-600">
+                        <strong>與專案對照：</strong>回應了本專案初期剔除的「運動」變因[cite: 1]，證明飯後微散步即有效果。
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- 科普圖文剖析區塊 -->
         <section class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm space-y-6">
             <h2 class="text-xl font-bold text-slate-900">重點專題：喝蘋果醋真的能控制血糖嗎？</h2>
             <div class="grid md:grid-cols-2 gap-6 items-center">
                 <div class="space-y-3 text-sm text-slate-600">
-                    <p>在許多健康文獻中，醋酸被認為能延緩胃排空並提高胰島素敏感度。本次實驗中，第 3 週飲食確實讓週平均血糖下降至 104 mg/dL。</p>
-                    <p class="bg-amber-50 text-amber-800 p-3 rounded-lg border-l-2 border-amber-400"><strong>警惕警訊：</strong>實驗同時記錄到 2 次夜間低血糖事件（血糖低於 70 mg/dL）。這代表任何熱門飲食法都可能隱藏個體風險，建議飲用時調整醋與水的比例，並避免空腹或過量食用。</p>
+                    <p>在許多健康文獻中，醋酸被認為能延緩胃排空並提高胰島素敏感度。本次實驗中，第 3 週飲食確實讓週平均血糖下降至 104 mg/dL[cite: 1]。</p>
+                    <p class="bg-amber-50 text-amber-800 p-3 rounded-lg border-l-2 border-amber-400"><strong>警惕警訊：</strong>實驗同時記錄到 2 次夜間低血糖事件（血糖低於 70 mg/dL）[cite: 1]。這代表任何熱門飲食法都可能隱藏個體風險，建議飲用時調整醋與水的比例，並避免空腹或過量食用。</p>
                 </div>
                 <div class="bg-slate-200 rounded-xl h-48 flex items-center justify-center text-slate-500">
                     <!-- 請將 src 替換為你的圖片路徑，例如：images/apple-cider-chart.jpg -->
