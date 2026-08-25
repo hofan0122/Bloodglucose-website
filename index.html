@@ -22,7 +22,6 @@
         <!-- 個人簡介區 -->
         <section class="grid md:grid-cols-3 gap-8 items-center bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
             <div class="bg-slate-200 aspect-square rounded-xl overflow-hidden flex items-center justify-center text-slate-500">
-                <!-- 請將 src 替換為你的照片，例如：images/author-photo.jpg -->
                <img src="about.JPG.png" alt="何凡個人照" width="100%">
             </div>
             <div class="md:col-span-2 space-y-3">
@@ -63,13 +62,31 @@
             <p class="text-xs text-slate-400">※ 數據由第三方系統自動即時更新</p>
         </div>
 
-        <!-- 右側：照片展示 -->
-        <div class="bg-slate-200 rounded-xl h-48 flex items-center justify-center text-slate-500">
-            <img src="images/expo-group.jpg" alt="博覽會現場互動照片" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden')">
-            <span class="text-sm">【圖片位置：博覽會現場分享與團體合照】</span>
+        <!-- 右側：回饋表單 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm space-y-3 flex flex-col items-center justify-center text-center">
+            <h3 class="font-bold text-slate-900 text-lg">回饋表單</h3>
+            <p class="text-xs text-slate-500">歡迎掃描 QR Code 或點擊下方按鈕填寫</p>
+            
+            <!-- QR Code 圖片（自動連動 Google 表單連結） -->
+            <div class="p-2 bg-slate-50 rounded-lg border border-slate-200">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=130x130&data=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSf_gnYQb5vJS1WiV7eWqgBWbvtITstgLo4CVVjAFWmYMPU02w%2Fviewform%3Fusp%3Dheader" 
+                     alt="回饋表單 QR Code" 
+                     class="w-28 h-28 object-contain">
+            </div>
+
+            <!-- 超連結按鈕 -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_gnYQb5vJS1WiV7eWqgBWbvtITstgLo4CVVjAFWmYMPU02w/viewform?usp=header" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inline-flex items-center justify-center px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-medium rounded-lg transition-colors shadow-sm w-full">
+                前往填寫回饋表單 ↗
+            </a>
         </div>
     </div>
 </section>
+</main>
 
 <!-- 腳本引入 -->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>
